@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controllers {
-    @GetMapping("/hello")
+    @GetMapping("/getName")
     public String sayHello(@RequestParam(value = "name", defaultValue = "world") String name){
         return "Hello, " + name;
     }
